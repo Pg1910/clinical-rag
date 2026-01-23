@@ -1,0 +1,64 @@
+{
+  "summary": [
+    {
+      "text": "Problem: liver failure",
+      "evidence_ids": [
+        "N000006"
+      ]
+    },
+    {
+      "text": "Problem: biliary atresia",
+      "evidence_ids": [
+        "N000001"
+      ]
+    },
+    {
+      "text": "Problem: ascending cholangitis",
+      "evidence_ids": [
+        "N000002"
+      ]
+    },
+    {
+      "text": "Problem: portal hypertension",
+      "evidence_ids": [
+        "N000003"
+      ]
+    },
+    {
+      "text": "Problem: sepsis",
+      "evidence_ids": [
+        "N000007"
+      ]
+    },
+    {
+      "text": "Procedure/history: Kasai procedure",
+      "evidence_ids": [
+        "N000001"
+      ]
+    },
+    {
+      "text": "Lab: PTT = 76.6",
+      "evidence_ids": [
+        "L000059"
+      ]
+    },
+    {
+      "text": "Lab: BUN = 73",
+      "evidence_ids": [
+        "L000040"
+      ]
+    },
+    {
+      "text": "Lab: BUN = 72",
+      "evidence_ids": [
+        "L000002"
+      ]
+    },
+    {
+      "text": "Lab: RBC = 3.80",
+      "evidence_ids": [
+        "L000056"
+      ]
+    }
+  ]
+}

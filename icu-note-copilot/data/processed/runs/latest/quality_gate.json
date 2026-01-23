@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "score": 100,
+  "warnings": [],
+  "errors": [],
+  "metrics": {
+    "summary": {
+      "total_bullets": 11,
+      "primary_problems": 1,
+      "key_labs": 2,
+      "organ_systems_covered": 5
+    },
+    "differential": {
+      "differential_count": 4,
+      "avg_supports": 2.0,
+      "avg_missing": 1.5,
+      "diagnoses": [
+        "Primary Hepatic Failure",
+        "Sepsis with Multi-organ Dysfunction",
+        "Coagulopathy (DIC)",
+        "Acute Kidney Injury (AKI)"
+      ]
+    },
+    "summary_score": 100,
+    "differential_score": 100
+  }
+}

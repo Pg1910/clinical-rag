@@ -1,0 +1,48 @@
+{
+  "summary": [
+    {
+      "text": "Patient: 8.5 month old female, 5.2kg",
+      "evidence_ids": [
+        "N000001"
+      ]
+    },
+    {
+      "text": "Primary problems: Liver failure secondary to biliary atresia",
+      "evidence_ids": [
+        "N000006"
+      ]
+    },
+    {
+      "text": "Hepatic: Post-Kasai, liver failure with coagulopathy",
+      "evidence_ids": [
+        "N000006"
+      ]
+    },
+    {
+      "text": "Infectious: E. coli sepsis, ascending cholangitis",
+      "evidence_ids": [
+        "N000002",
+        "N000004"
+      ]
+    },
+    {
+      "text": "Respiratory: ARDS on mechanical ventilation, FiO2 0.6",
+      "evidence_ids": [
+        "N000007"
+      ]
+    },
+    {
+      "text": "Coagulation: Coagulopathy: PT 21.8, PTT 76.6",
+      "evidence_ids": [
+        "L000059",
+        "L000049"
+      ]
+    },
+    {
+      "text": "Renal: Elevated BUN 73, possible hepatorenal",
+      "evidence_ids": [
+        "L000040"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "findings": [
+    {
+      "severity": "info",
+      "message": "Missing evidence_ids for 'Age'.",
+      "offending_text": "8.5 month old",
+      "missing_evidence_ids": [
+        "N000001"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "patient_info": [
+    {
+      "text": "8.5 month old female, 5.2kg [N000001]",
+      "evidence_ids": [
+        "N000001"
+      ]
+    }
+  ],
+  "primary_problems": [
+    {
+      "text": "Liver failure secondary to biliary atresia [N000006]",
+      "evidence_ids": [
+        "N000006"
+      ]
+    }
+  ],
+  "respiratory": [
+    {
+      "text": "ARDS on mechanical ventilation, FiO2 0.6 [N000007]",
+      "evidence_ids": [
+        "N000007"
+      ]
+    }
+  ],
+  "cardiovascular": [],
+  "hepatic": [
+    {
+      "text": "Post-Kasai, liver failure with coagulopathy [N000006]",
+      "evidence_ids": [
+        "N000006"
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "text": "Elevated BUN 73, possible hepatorenal [L000040]",
+      "evidence_ids": [
+        "L000040"
+      ]
+    }
+  ],
+  "hematology_coag": [
+    {
+      "text": "Coagulopathy: PT 21.8, PTT 76.6 [L000049, L000059]",
+      "evidence_ids": [
+        "L000049",
+        "L000059"
+      ]
+    }
+  ],
+  "infectious": [
+    {
+      "text": "E. coli sepsis, ascending cholangitis [N000004, N000002]",
+      "evidence_ids": [
+        "N000004",
+        "N000002"
+      ]
+    }
+  ],
+  "neurologic": [],
+  "key_labs": [
+    {
+      "text": "PT 21.8, PTT 76.6",
+      "evidence_ids": [
+        "L000049",
+        "L000059"
+      ]
+    },
+    {
+      "text": "BUN 73",
+      "evidence_ids": [
+        "L000040"
+      ]
+    }
+  ],
+  "supports": [
+    {
+      "text": "Mechanical ventilation [M000001]",
+      "evidence_ids": [
+        "M000001"
+      ]
+    }
+  ],
+  "procedures": [
+    {
+      "text": "Kasai procedure (prior) [N000001]",
+      "evidence_ids": [
+        "N000001"
+      ]
+    }
+  ]
+}
