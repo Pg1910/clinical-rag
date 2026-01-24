@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clinical RAG Demo</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Clinical RAG Demo</h1>
+        <div id="system-specs">
+            <b>Model:</b> gemma3:4b<br>
+            <b>Embedding:</b> sentence-transformers/all-MiniLM-L6-v2<br>
+            <b>Retrieval:</b> BM25 + FAISS vector search<br>
+            <b>Hybrid weights:</b> BM25 0.55, Vector 0.45<br>
+            <b>Rerank:</b> Section-aware rules
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <aside id="left-panel">
+                <h2>Inputs</h2>
+                <label>Case selector:
+                    <select id="case-selector"></select>
+                </label>
+                <label>User question:
+                    <input type="text" id="user-question" value="Summarize case">
+                </label>
+                <div class="buttons">
+                    <button id="btn-global">Run Global Retrieval</button>
+                    <button id="btn-local">Run Local Retrieval</button>
+                    <button id="btn-full">Run Full Pipeline</button>
+                    <button id="btn-latest">Load Latest Report</button>
+                </div>
+                <div class="toggles">
+                    <label><input type="checkbox" id="toggle-soap">Global uses SOAP templates</label><br>
+                    <label><input type="checkbox" id="toggle-hybrid" checked>Local uses hybrid + rerank</label><br>
+                    <label><input type="checkbox" id="toggle-evidence">Show evidence IDs inline</label><br>
+                    <label><input type="checkbox" id="toggle-json">Enable JSON strict mode</label>
+                </div>
+            </aside>
+            <section id="center-panel">
+                <h2>Chat</h2>
+                <div id="chat-ui"></div>
+                <button id="btn-export">Export report.json</button>
+            </section>
+            <aside id="right-panel">
+                <div class="tabs">
+                    <button class="tab-btn" data-tab="global">Global Trace</button>
+                    <button class="tab-btn" data-tab="local">Local Trace</button>
+                    <button class="tab-btn" data-tab="evidence">Evidence Viewer</button>
+                    <button class="tab-btn" data-tab="metrics">Metrics</button>
+                </div>
+                <div id="tab-content">
+                    <div id="global-trace" class="tab-pane"></div>
+                    <div id="local-trace" class="tab-pane" style="display:none"></div>
+                    <div id="evidence-viewer" class="tab-pane" style="display:none"></div>
+                    <div id="metrics" class="tab-pane" style="display:none">
+                        <h3>BLEU Score</h3>
+                        <textarea id="reference-summary" placeholder="Paste reference summary..."></textarea>
+                        <button id="btn-bleu">Compute BLEU</button>
+                        <div id="bleu-results"></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <script src="/static/app.js"></script>
+</body>
+</html>

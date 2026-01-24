@@ -1,0 +1,49 @@
+================================================================================
+CLINICAL CASE REPORT - Row ID: 77465
+Generated: 2026-01-24T18:32:20.813818
+================================================================================
+
+────────────────────────────────────────────────────────────────────────────────
+SOAP SUMMARY
+────────────────────────────────────────────────────────────────────────────────
+## SUBJECTIVE
+- The patient presented with a 56-year-old male complaining of a dull pain on the right back and a swelling in the same area for several weeks [CN_77465_0, CV_77465_3, CF_77465_1]. He reported being in good state and very active [CN_77465_0, CV_77465_2, CF_77465_2]. He had a previous simple fracture of the 9th right rib one year ago [CN_77465_0, CV_77465_3].
+
+## OBJECTIVE
+- A CT scan revealed a tumor of the thoracic wall in the right hemithorax measuring 8 x 4 cm with heterogeneous density [CF_77465_1].
+- Micronodular infiltrations were seen in both lungs up to 5mm in diameter, and a single nodule of almost 1cm in the lower lobe of the right lung [CF_77465_2].
+- Frozen biopsy of the lung lesions and an excision biopsy of the thoracic wall tumor were performed [CF_77465_3, CF_77465_4].
+- The biopsy results were negative for malignant cells [CF_77465_4].
+
+## ASSESSMENT
+- The patient presented with a malignant tumor of the thoracic wall with secondary lesions in both lungs [CF_77465_3].
+
+## PLAN
+- Oncologic resection of the tumor of the thoracic wall was performed [CF_77465_4]. The patient was discharged in very good condition five days after the procedure [CF_77465_6].  Information needed: Further follow-up to monitor for recurrence [Not documented].
+
+────────────────────────────────────────────────────────────────────────────────
+DIFFERENTIAL DIAGNOSIS
+────────────────────────────────────────────────────────────────────────────────
+
+1. Malignant Thoracic Wall Tumor with Metastatic Lung Involvement (high confidence)
+   Supporting evidence:
+   - Patient: Patient Hi doctor, I have this dump pain on my right back and a swelling right there for several weeks. [CV_77465_3]
+   - Doctor: Doctor Hmm, I see. Can you describe the pain a little more? [CV_77465_5]
+   - Patient: It's like a dull ache and it hurts more when I move. [CV_77465_7]
+   Missing: Further staging imaging (PET/CT) to assess for distant metastasis, Molecular profiling of the tumor to guide treatment
+
+2. Primary Thoracic Wall Tumor (Unspecified) (moderate confidence)
+   Supporting evidence:
+   - csv_note: On the X-ray was seen a shadow in the lower part of the right hemithorax. After that, it was decided to perform a CT-scan of the thorax that revealed a tumor of the thoracic wall in the right hemithorax. [CN_77465_0]
+   - Patient: Patient Hi doctor, I have this dump pain on my right back and a swelling right there for several weeks. [CV_77465_3]
+   Missing: Detailed histological examination of the resected tissue to determine tumor type and grade, Immunohistochemical staining to assess for specific markers
+
+────────────────────────────────────────────────────────────────────────────────
+EVIDENCE USED: 21 items
+────────────────────────────────────────────────────────────────────────────────
+CF_77465_0, CF_77465_1, CF_77465_2, CF_77465_3, CF_77465_4, CF_77465_5, CF_77465_6, CN_77465_0, CN_77465_1, CN_77465_2, CN_77465_3, CN_77465_4, CS_77465_0, CV_77465_0, CV_77465_1, CV_77465_2, CV_77465_3, CV_77465_4, CV_77465_5, CV_77465_6
+... and 1 more
+
+================================================================================
+END OF REPORT
+================================================================================

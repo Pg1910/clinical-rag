@@ -1,0 +1,51 @@
+================================================================================
+CLINICAL CASE REPORT - Row ID: 155216
+Generated: 2026-01-24T18:31:39.552779
+================================================================================
+
+────────────────────────────────────────────────────────────────────────────────
+SOAP SUMMARY
+────────────────────────────────────────────────────────────────────────────────
+## SUBJECTIVE
+- A sixteen-year-old girl presented with discomfort in the neck and lower back, alongside restriction of body movements [CN_155216_0]. She developed pain and discomfort in her neck within the second week of starting olanzapine 5mg daily, associated with a sustained abnormal neck contraction pulling her head to the right [CN_155216_3]. She reported this had persisted for three years with varying intensity [CN_155216_4].
+
+## OBJECTIVE
+- She had been experiencing difficulties for four months since being introduced to olanzapine [CN_155216_2]. She would keep her limbs in a specific position to support her body weight due to the back and neck discomfort [CN_155216_1]. She required assistance with daily chores [CN_155216_2].  [CN_155216_4] describes the neck contraction pulling her head to the right. [CN_155216_5] notes a brief period of rigidity treated with trihexyphenidyl. [CN_155216_8] details a reduction and discontinuation of olanzapine following a relapse. [CN_155216_9] describes the use of sodium valproate and escitalopram.
+
+## ASSESSMENT
+- Diagnosed with bipolar affective disorder, initially presenting with mania at age 11, managed with olanzapine [CF_155216_3]. The persistent neck pain and contraction is consistent with olanzapine-induced dystonia, potentially multifocal [CF_155216_20]. [CS_155216_40] indicates no specific severity or results for diagnostic tests.
+
+## PLAN
+- Information needed: Further investigation into the etiology of the dystonia and potential alternative treatments [CS_155216_41].
+
+────────────────────────────────────────────────────────────────────────────────
+DIFFERENTIAL DIAGNOSIS
+────────────────────────────────────────────────────────────────────────────────
+
+1. Dystonia (Primary Multifocal or Segmental) (high confidence)
+   Supporting evidence:
+   - csv_full_note: These movements failed to disappear completely. Another exacerbation of the mood symptoms in the form of mania warranted a need for the introduction of olanzapine (by a different treatment team) and, support and can do some daily chores on her own. The pain and discomfort in the back and neck have also reduced. [CF_155216_14]
+   - csv_full_note: tiguous areas would be called segmental dystonia. When the clinical picture is that of involvement of two or more noncontiguous regions, the label used is, “multifocal” and the involvement of one leg  [CF_155216_20]
+   Missing: Detailed neurological examination including cranial nerve assessment, pronator drift, and assessment of other involuntary movements.  MRI of the brain to rule out structural abnormalities.
+
+2. Olanzapine-Induced Dystonia (moderate confidence)
+   Supporting evidence:
+   - csv_note: The patient developed pain and discomfort in her neck within the second week of being put on tablet olanzapine at a dose of 5 mg per day. This was associated with a sustained and abnormal contraction  [CN_155216_3]
+   - csv_full_note: olanzapine was reduced and stopped. She was put on tablet sodium valproate, 1000 mg per day during this period for the stabilization of her mood when she was also given escitalopram for  [CF_155216_9]
+   Missing: Detailed medication history, including dosage changes and response to other antipsychotics.  Consideration of other potential causes of dystonia.
+
+3. Post-Medication Movement Disorder (Related to Trihexyphenidyl) (low confidence)
+   Supporting evidence:
+   - csv_note: Apart from a brief period of around three weeks when she was given tablet trihexyphenidyl 4 mg per day for rigidity in her upper limbs, she was not prescribed any other psychotropic medication. The ri [CN_155216_4]
+   - CF_155216_5: ld tend to correlate with the dose of olanzapine. Apart from a brief period of around three weeks when she was given tablet trihexyphenidyl 4 mg per day for rigidity in her upper limbs, she was not prescribed any other psychotropic medication. The rigidity showed good response to this medication which was subsequently stopped. [CF_155216_5]
+   Missing: Detailed review of all medications, including timing and duration of use.  Assessment of response to anticholinergic medications.
+
+────────────────────────────────────────────────────────────────────────────────
+EVIDENCE USED: 32 items
+────────────────────────────────────────────────────────────────────────────────
+CF_155216_0, CF_155216_1, CF_155216_12, CF_155216_14, CF_155216_2, CF_155216_20, CF_155216_22, CF_155216_3, CF_155216_4, CF_155216_5, CF_155216_6, CF_155216_7, CF_155216_8, CF_155216_9, CN_155216_0, CN_155216_1, CN_155216_2, CN_155216_3, CN_155216_4, CS_155216_39
+... and 12 more
+
+================================================================================
+END OF REPORT
+================================================================================

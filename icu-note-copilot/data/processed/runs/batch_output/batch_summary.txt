@@ -1,0 +1,37 @@
+================================================================================
+BATCH PROCESSING SUMMARY
+Total cases: 4/5
+Total time: 229.0s (45.8s per case)
+================================================================================
+
+### Case 155216
+## SUBJECTIVE
+- A sixteen-year-old girl presented with discomfort in the neck and lower back, alongside restriction of body movements [CN_155216_0]. She developed pain and discomfort in her neck within the second week of starting olanzapine 5mg daily, associated with a sustained abnormal neck contraction pulling her head to the right [CN_155216_3]. She reported this had persisted for three years with varying intensity [CN_155216_4].
+
+## OBJECTIVE
+- She had been experiencing difficulties for four...
+Differentials: ['Dystonia (Primary Multifocal or Segmental)', 'Olanzapine-Induced Dystonia', 'Post-Medication Movement Disorder (Related to Trihexyphenidyl)']
+
+### Case 77465
+## SUBJECTIVE
+- The patient presented with a 56-year-old male complaining of a dull pain on the right back and a swelling in the same area for several weeks [CN_77465_0, CV_77465_3, CF_77465_1]. He reported being in good state and very active [CN_77465_0, CV_77465_2, CF_77465_2]. He had a previous simple fracture of the 9th right rib one year ago [CN_77465_0, CV_77465_3].
+
+## OBJECTIVE
+- A CT scan revealed a tumor of the thoracic wall in the right hemithorax measuring 8 x 4 cm with heterogeneous...
+Differentials: ['Malignant Thoracic Wall Tumor with Metastatic Lung Involvement', 'Primary Thoracic Wall Tumor (Unspecified)']
+
+### Case 80176
+## SUBJECTIVE
+- The patient presented with pain in the left proximal forearm following a fall [CN_80176_0, CV_80176_3]. He has a history of left elbow arthrodesis performed at age 18 [CN_80176_0]. He reported worsening motion through the nonunion site after three months of conservative treatment [CN_80176_2].
+
+## OBJECTIVE
+- Radiographs revealed an elbow arthrodesis at 90 degrees with retained hardware and a minimally displaced proximal ulnar shaft fracture [CN_80176_1, CF_80176_1]. A motor and ...
+Differentials: ['Proximal Ulnar Shaft Fracture with Hypertrophic Nonunion & Post-Arthritic Elbow', 'Post-Operative Elbow Pain (Following Arthrodesis & Potential Complications)']
+
+### Case 72232
+## SUBJECTIVE
+- The patient is a 47-year-old male who presented with recurrent attacks of pain in both knees over 1 year [CN_72232_0, CF_72232_0]. In September 2016, he experienced severe pain in the left knee due to trauma and increased weight-bearing [CN_72232_1, CF_72232_1].  He reported gradual pain in the right knee in April 2017 with no swelling [CN_72232_4, CF_72232_4].
+
+## OBJECTIVE
+- MRI revealed bone marrow edema involving the lateral femoral condyle with complete resolution of the bon...
+Differentials: ['Osteoarthritis (OA) of the Knee', 'Meniscal Tear with Secondary Cartilage Changes', 'Chondral Defect/Osteochondritis Dissecans (OCD)']

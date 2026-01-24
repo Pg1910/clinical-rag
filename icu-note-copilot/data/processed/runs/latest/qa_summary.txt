@@ -1,0 +1,188 @@
+================================================================================
+ICU CLINICAL SUMMARY - QUESTION & ANSWER FORMAT
+Generated: 2026-01-24 14:55:43
+================================================================================
+
+────────────────────────────────────────────────────────────────────────────────
+Q1. [INFECTION_SOURCE]
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION:
+  What is the suspected source of infection (e.g., biliary, bloodstream, lung), and what evidence supports it?
+
+CLINICAL RATIONALE:
+  Helps narrow sepsis source and competing causes of deterioration.
+
+ANSWER:
+  The suspected source of infection is the biliary tract, with evidence of sepsis [D000030, N000004]. The patient’s presentation includes a congenital bile duct anomaly, infection of the biliary tract and liver, multiple liver abscesses, and portal hypertension [D000030, N000004].
+
+
+────────────────────────────────────────────────────────────────────────────────
+Q2. [CULTURES]
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION:
+  What are the blood culture results (organism, sensitivities) and timing relative to antibiotics?
+
+CLINICAL RATIONALE:
+  Confirms pathogen, guides whether ongoing sepsis is plausible.
+
+ANSWER:
+  Not documented in available records.
+
+
+────────────────────────────────────────────────────────────────────────────────
+Q3. [RESP_METRICS]
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION:
+  What are the key respiratory severity metrics/trends (FiO2, PEEP, PIP, PaO2/SpO2 trend) over time?
+
+CLINICAL RATIONALE:
+  Required to stage ARDS severity and distinguish ventilation issues vs disease progression.
+
+ANSWER:
+  The available evidence indicates the following respiratory severity metrics and trends:
+  
+  *   **FiO2:** Increased from 50% to 100% during hand bag ventilation sessions [D000034].
+  *   **PEEP:** Not explicitly quantified in the provided evidence.
+  *   **PIP:** Not explicitly quantified in the provided evidence.
+  *   **PaO2/SpO2 Trend:** Not explicitly quantified in the provided evidence. However, an increase in FiO2 is associated with increased oxygenation [D000013].
+
+
+────────────────────────────────────────────────────────────────────────────────
+Q4. [COAG_PROFILE]
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION:
+  What is the full coagulation profile trend (PT/INR, PTT, fibrinogen, platelets) and bleeding status?
+
+CLINICAL RATIONALE:
+  Distinguishes liver-related coagulopathy from DIC and assesses severity.
+
+ANSWER:
+  The coagulation profile includes elevated PTT, PT, and fibrinogen levels [D000044, D000042, D000041]. Platelet count is also noted [D000042]. The bleeding status is not explicitly detailed in available records [Not documented in available records].
+
+
+────────────────────────────────────────────────────────────────────────────────
+Q5. [HEPATIC_LABS]
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION:
+  What are liver function trends (bilirubin, AST/ALT, ammonia) and clinical signs (encephalopathy) if documented?
+
+CLINICAL RATIONALE:
+  Corroborates liver failure trajectory and severity.
+
+ANSWER:
+  Liver function trends: Elevated ammonia levels are present [D000058], aspartate aminotransferase (AST) is high [D000048], and blood urea nitrogen (BUN) is increased [D000050]. Clinical signs: Encephalopathy is suggested by elevated ammonia levels [D000058].
+
+
+────────────────────────────────────────────────────────────────────────────────
+Q6. [RENAL_STATUS]
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION:
+  What is renal function trend (BUN/Cr, urine output) and fluid balance?
+
+CLINICAL RATIONALE:
+  Differentiates pre-renal vs intrinsic kidney injury and impacts overall severity assessment.
+
+ANSWER:
+  Renal function: BUN levels are elevated at [D000050], and serum creatinine levels are elevated at [D000052], indicating renal insufficiency.
+  
+  Fluid balance: Fluid balance data is present in the flowsheets [D000036], but the specific trend is not detailed in the provided evidence.
+  
+  Urine output: Not documented in available records.
+
+
+────────────────────────────────────────────────────────────────────────────────
+Q7. [PATIENT_OVERVIEW]
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION:
+  What is the patient's age, weight, and primary admission diagnosis?
+
+CLINICAL RATIONALE:
+  Establishes baseline patient context for clinical decision-making.
+
+ANSWER:
+  The patient’s admission body weight is 5 kg. The primary admission diagnosis is ARDS complicated by sepsis, a congenital bile duct anomaly, high-risk corrective surgical procedure, and infection of the biliary tract and liver [N000008, N000030].
+
+
+────────────────────────────────────────────────────────────────────────────────
+Q8. [CURRENT_STATUS]
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION:
+  What is the patient's current clinical status and trajectory (improving, stable, deteriorating)?
+
+CLINICAL RATIONALE:
+  Guides urgency of interventions and prognosis discussion.
+
+ANSWER:
+  The patient presents as a typical ARDS case complicated by sepsis, coagulation defects, and a history of a high-risk corrective surgical procedure and biliary tract infection [D000030]. The patient is receiving mechanical ventilation [D000010] and other supportive measures [N000005]. Given the etiology of ARDS and the presence of sepsis, the clinical trajectory is currently deteriorating [D000030].
+
+
+────────────────────────────────────────────────────────────────────────────────
+Q9. [ORGAN_FAILURES]
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION:
+  Which organ systems are currently failing or at risk, and what is the evidence?
+
+CLINICAL RATIONALE:
+  Multi-organ dysfunction assessment is critical in ICU patients.
+
+ANSWER:
+  The following organ systems are failing or at risk:
+  
+  *   **Respiratory System:** The patient presents with ARDS, characterized by respiratory distress, tachypnea, and impaired oxygenation [D000005, D000009].
+  *   **Cardiovascular System:** Sepsis and coagulation defects are present, potentially impacting oxygen delivery [D000030, D000024].
+
+
+────────────────────────────────────────────────────────────────────────────────
+Q10. [VENTILATOR_SETTINGS]
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION:
+  What are the current ventilator settings (mode, FiO2, PEEP, tidal volume) and respiratory status?
+
+CLINICAL RATIONALE:
+  Essential for ARDS management and weaning readiness assessment.
+
+ANSWER:
+  The available data does not specify the current ventilator settings (mode, FiO2, PEEP, tidal volume) [N000001]. However, it is documented that the patient uses two modes of ventilation, including CMV, and utilizes a hand bag ventilation with FiO2 increased from 50% to 100% [D000034]. The patient is also sedated and has muscle relaxation [D000027].
+
+
+────────────────────────────────────────────────────────────────────────────────
+Q11. [HEMODYNAMICS]
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION:
+  What are the patient's hemodynamic parameters (MAP, heart rate, vasopressor requirements)?
+
+CLINICAL RATIONALE:
+  Guides fluid resuscitation and vasopressor management in sepsis/shock.
+
+ANSWER:
+  The patient’s heart rate was 7 bpm [C000003] and 22 bpm [C000007]. The evidence does not specify the patient’s mean arterial pressure (MAP) or vasopressor requirements [N000009].
+
+
+────────────────────────────────────────────────────────────────────────────────
+Q12. [ANTIBIOTIC_COVERAGE]
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION:
+  What antibiotics is the patient receiving and are they appropriate for the identified organisms?
+
+CLINICAL RATIONALE:
+  Antibiotic stewardship and source control are pillars of sepsis management.
+
+ANSWER:
+  The patient is receiving antibiotics, but the specific agents and their appropriateness for the identified organisms are not documented in available records. [N000009]
+
+
+================================================================================
+END OF CLINICAL Q&A SUMMARY
+================================================================================

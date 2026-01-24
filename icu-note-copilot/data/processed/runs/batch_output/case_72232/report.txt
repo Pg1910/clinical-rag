@@ -1,0 +1,52 @@
+================================================================================
+CLINICAL CASE REPORT - Row ID: 72232
+Generated: 2026-01-24T18:34:40.960936
+================================================================================
+
+────────────────────────────────────────────────────────────────────────────────
+SOAP SUMMARY
+────────────────────────────────────────────────────────────────────────────────
+## SUBJECTIVE
+- The patient is a 47-year-old male who presented with recurrent attacks of pain in both knees over 1 year [CN_72232_0, CF_72232_0]. In September 2016, he experienced severe pain in the left knee due to trauma and increased weight-bearing [CN_72232_1, CF_72232_1].  He reported gradual pain in the right knee in April 2017 with no swelling [CN_72232_4, CF_72232_4].
+
+## OBJECTIVE
+- MRI revealed bone marrow edema involving the lateral femoral condyle with complete resolution of the bone marrow edema of the medial femoral condyle [CN_72232_3, CF_72232_3].  Initially, the left knee MRI showed a moderate-sized focal area of marrow edema/contusion involving the medial femoral condyle [CN_72232_2, CF_72232_2]. The right knee MRI showed extensive marrow edema involving the medial femoral condyle [CN_72232_4, CF_72232_4].  The patient’s lab results showed a vitamin D level of 8 ng/mL [CF_72232_8]. [CF_72232_8]
+
+## ASSESSMENT
+- The patient’s symptoms and MRI findings are consistent with recurrent episodes of bone marrow edema, likely related to chondral changes in the knees [CN_72232_2, CN_72232_4]. [CN_72232_3]
+
+## PLAN
+- The patient was treated conservatively with NSAIDs and physiotherapy [CF_72232_2, CF_72232_3].  He was advised to use a cane to minimize weight bearing [CF_72232_3]. Further investigation with DXA scan revealed a T score of -1.0 indicating osteopenia [CF_72232_9].  Information needed: Further evaluation to assess the underlying cause of the bone marrow edema, including consideration of rheumatological workup [Not documented].
+
+────────────────────────────────────────────────────────────────────────────────
+DIFFERENTIAL DIAGNOSIS
+────────────────────────────────────────────────────────────────────────────────
+
+1. Osteoarthritis (OA) of the Knee (high confidence)
+   Supporting evidence:
+   - diagnosis tests[0].result: Focal area of marrow edema/contusion involving the medial femoral condyle, bone marrow edema involving the lateral femoral condyle, extensive marrow edema involving the medial femoral condyle [CS_72232_41]
+   - treatments[0].name: Diclofenac sodium [CS_72232_45]
+   - diagnosis tests[0].time: September 2016, three months later, April 2017, four months later [CS_72232_43]
+   Missing: Assessment of joint space narrowing on imaging, Further investigation for inflammatory markers (e.g., ESR, CRP) to assess for active inflammation
+
+2. Meniscal Tear with Secondary Cartilage Changes (moderate confidence)
+   Supporting evidence:
+   - diagnosis tests[0].result: Focal area of marrow edema/contusion involving the medial femoral condyle [CS_72232_41]
+   - csv_note: In September 2016, the patient presented with severe pain over the medial aspect of the left knee for a two-week duration which prevented him from ambulation. The pain increased with weight-bearing ph [CN_72232_1]
+   Missing: MRI with meniscal visualization, Clinical examination for meniscal click or locking
+
+3. Chondral Defect/Osteochondritis Dissecans (OCD) (low confidence)
+   Supporting evidence:
+   - diagnosis tests[0].result: Moderate-sized focal area of marrow edema involving the medial femoral condyle [CS_72232_41]
+   - diagnosis tests[0].time: September 2016, three months later, April 2017, four months later [CS_72232_43]
+   Missing: Assessment of cartilage quality on imaging (e.g., advanced MRI sequences), Clinical assessment for instability or giving way
+
+────────────────────────────────────────────────────────────────────────────────
+EVIDENCE USED: 34 items
+────────────────────────────────────────────────────────────────────────────────
+CF_72232_0, CF_72232_1, CF_72232_2, CF_72232_3, CF_72232_4, CF_72232_5, CF_72232_8, CF_72232_9, CN_72232_0, CN_72232_1, CN_72232_2, CN_72232_3, CN_72232_4, CN_72232_5, CS_72232_0, CS_72232_1, CS_72232_2, CS_72232_3, CS_72232_39, CS_72232_4
+... and 14 more
+
+================================================================================
+END OF REPORT
+================================================================================

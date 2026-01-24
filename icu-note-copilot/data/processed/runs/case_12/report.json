@@ -1,0 +1,220 @@
+{
+  "row_id": 12,
+  "timestamp": "2026-01-24T16:36:49.371849",
+  "soap_context": {
+    "S": [
+      {
+        "label": "past_medical_history[0]",
+        "value": "Parkinson's disease",
+        "evidence_ids": [
+          "CS_12_10"
+        ]
+      },
+      {
+        "label": "associated_symptoms[0]",
+        "value": "reduced ROM",
+        "evidence_ids": [
+          "CS_12_6"
+        ]
+      },
+      {
+        "label": "associated_symptoms[1]",
+        "value": "weakness",
+        "evidence_ids": [
+          "CS_12_7"
+        ]
+      },
+      {
+        "label": "duration",
+        "value": "3 months",
+        "evidence_ids": [
+          "CS_12_1"
+        ]
+      }
+    ],
+    "O": [
+      {
+        "label": "severity",
+        "value": "6-7/10",
+        "evidence_ids": [
+          "CS_12_2"
+        ]
+      },
+      {
+        "label": "medications.discontinued[0]",
+        "value": "Olanzapine 5mg - due to rigidity",
+        "evidence_ids": [
+          "CS_12_12"
+        ]
+      },
+      {
+        "label": "medications.current[0]",
+        "value": "Carbidopa-levodopa 25-100 TID",
+        "evidence_ids": [
+          "CS_12_11"
+        ]
+      }
+    ],
+    "A": [],
+    "P": [
+      {
+        "label": "plan[1]",
+        "value": "Physical therapy referral",
+        "evidence_ids": [
+          "CS_12_19"
+        ]
+      }
+    ],
+    "row_id": 12
+  },
+  "soap_summary": "## SUBJECTIVE\n- The patient reports left arm pain following a fall 3 months ago, with worsening symptoms and reduced range of motion (ROM) [CS_12_10, CS_12_6, CS_12_7, CS_12_1].  She reports associated weakness [CS_12_7] and pain rated 6-7/10 [CS_12_2]. Olanzapine 5mg was discontinued due to rigidity [CS_12_12].\n\n## OBJECTIVE\n- Physical exam reveals limited shoulder abduction (60 degrees vs 180 normal) and tenderness over the rotator cuff insertion [CF_12_1]. Neck shows mild rigidity, improved since olanzapine discontinuation [CS_12_15]. No numbness or tingling was reported [CS_12_8]. The patient’s pain is rated 6-7/10 [CS_12_2].\n\n## ASSESSMENT\n- Likely rotator cuff injury or frozen shoulder, exacerbated by the fall [CF_12_0, CS_12_20]. Medication-induced rigidity is improving [CS_12_12].\n\n## PLAN\n- Physical therapy referral [CS_12_19]. Follow-up in 2 weeks [CS_12_20].",
+  "differential": [
+    {
+      "diagnosis": "Rotator Cuff Injury",
+      "confidence": "high",
+      "support": [
+        {
+          "label": "associated_symptoms[1]",
+          "value": "weakness",
+          "evidence_ids": [
+            "CS_12_7"
+          ]
+        },
+        {
+          "label": "reduced ROM",
+          "value": "60 degrees abduction",
+          "evidence_ids": [
+            "CS_12_6"
+          ]
+        },
+        {
+          "label": "physical_exam.neck",
+          "value": "mild rigidity, improved",
+          "evidence_ids": [
+            "CS_12_15"
+          ]
+        }
+      ],
+      "against": [
+        {
+          "label": "negatives[0]",
+          "value": "no numbness",
+          "evidence_ids": [
+            "CS_12_8"
+          ]
+        }
+      ],
+      "missing": [
+        "MRI rotator cuff evaluation",
+        "Rotator cuff strength testing"
+      ]
+    },
+    {
+      "diagnosis": "Frozen Shoulder (Adhesive Capsulitis)",
+      "confidence": "moderate",
+      "support": [
+        {
+          "label": "reduced ROM",
+          "value": "60 degrees abduction",
+          "evidence_ids": [
+            "CS_12_6"
+          ]
+        },
+        {
+          "label": "severity",
+          "value": "6-7/10",
+          "evidence_ids": [
+            "CS_12_2"
+          ]
+        },
+        {
+          "label": "duration",
+          "value": "3 months",
+          "evidence_ids": [
+            "CS_12_1"
+          ]
+        }
+      ],
+      "against": [
+        {
+          "label": "negatives[0]",
+          "value": "no numbness",
+          "evidence_ids": [
+            "CS_12_8"
+          ]
+        }
+      ],
+      "missing": [
+        "Range of motion measurements (full spectrum)",
+        "USS of shoulder to assess capsule thickness"
+      ]
+    },
+    {
+      "diagnosis": "Parkinson’s Disease Exacerbation",
+      "confidence": "moderate",
+      "support": [
+        {
+          "label": "past_medical_history[0]",
+          "value": "Parkinson's disease",
+          "evidence_ids": [
+            "CS_12_10"
+          ]
+        },
+        {
+          "label": "medications.discontinued[0]",
+          "value": "Olanzapine 5mg - due to rigidity",
+          "evidence_ids": [
+            "CS_12_12"
+          ]
+        }
+      ],
+      "against": [
+        {
+          "label": "associated_symptoms[1]",
+          "value": "weakness",
+          "evidence_ids": [
+            "CS_12_7"
+          ]
+        }
+      ],
+      "missing": [
+        "Assessment of motor stability (e.g., UPDRS)",
+        "Detailed medication review"
+      ]
+    }
+  ],
+  "clarifying_questions": [
+    "“Can you describe the onset of the reduced range of motion and weakness? Specifically, when did it begin, and were there any specific events or activities that triggered or worsened the symptoms initially?” (This addresses the “onset” missing information and could reveal a potential exacerbating factor.)",
+    "“Can you describe the rigidity the patient was experiencing prior to discontinuing Olanzapine?  Was it constant, intermittent, and what were the characteristics of the rigidity (e.g., akathisia, tremor)?” (This clarifies the reason for Olanzapine discontinuation and provides more detail about the patient’s symptoms, potentially informing medication choices.)",
+    "“Can you perform a detailed physical examination, specifically assessing the patient’s motor skills, including assessing for bradykinesia, tremor, rigidity, and postural instability?  Please quantify the reduced ROM further (e.g., specific degrees of limitation in key movements).” (This directly addresses the missing physical exam findings and seeks more precise data on motor function.)",
+    "“What is the patient’s current medication adherence for the Carbidopa-levodopa? Are there any side effects they are experiencing with the current medication regimen?” (This assesses medication effectiveness and identifies potential barriers to treatment or new side effects to monitor.)",
+    "“Can you please describe the patient’s general appearance and any other associated symptoms, such as autonomic dysfunction (e.g., constipation, orthostatic hypotension), cognitive changes, or mood changes?” (This expands on the associated symptoms and could reveal additional contributing factors or complications.)"
+  ],
+  "evidence_used": [
+    "CF_12_0",
+    "CF_12_1",
+    "CN_12_0",
+    "CS_12_1",
+    "CS_12_10",
+    "CS_12_11",
+    "CS_12_12",
+    "CS_12_15",
+    "CS_12_17",
+    "CS_12_18",
+    "CS_12_19",
+    "CS_12_2",
+    "CS_12_20",
+    "CS_12_6",
+    "CS_12_7",
+    "CS_12_8",
+    "CV_12_1",
+    "CV_12_13",
+    "CV_12_7",
+    "D000004",
+    "D000006",
+    "D000007",
+    "D000028",
+    "D000036",
+    "L000033"
+  ]
+}

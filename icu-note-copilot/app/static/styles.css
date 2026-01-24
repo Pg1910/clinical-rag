@@ -1,0 +1,17 @@
+body { font-family: Arial, sans-serif; background: #f7f7f7; margin: 0; }
+header { background: #2c3e50; color: #fff; padding: 1em; }
+.container { display: flex; flex-direction: row; height: 90vh; }
+#left-panel, #right-panel { width: 22%; background: #ecf0f1; padding: 1em; overflow-y: auto; }
+#center-panel { flex: 1; background: #fff; padding: 1em; overflow-y: auto; }
+#chat-ui { margin-bottom: 1em; }
+.chat-bubble { margin: 0.5em 0; padding: 0.7em 1em; border-radius: 1em; max-width: 80%; }
+.chat-bubble.user { background: #dff9fb; align-self: flex-end; }
+.chat-bubble.assistant { background: #f6e58d; align-self: flex-start; }
+.tabs { display: flex; gap: 0.5em; margin-bottom: 1em; }
+.tab-btn { padding: 0.5em 1em; border: none; background: #bdc3c7; cursor: pointer; border-radius: 0.5em; }
+.tab-btn.active { background: #7ed6df; }
+.tab-pane { display: block; }
+#metrics textarea { width: 100%; height: 4em; }
+#metrics button { margin-top: 0.5em; }
+.buttons button { margin: 0.2em 0.1em; }
+.toggles label { display: block; margin: 0.2em 0; }

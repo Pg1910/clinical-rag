@@ -1,0 +1,16 @@
+idx,note,full_note,conversation,summary_json
+12,"Patient presents with left arm pain after fall 3 months ago. Reports worsening symptoms and reduced ROM.","HISTORY: 65-year-old female with history of Parkinson's disease on olanzapine, presented with chief complaint of left arm pain following a fall 3 months prior. Patient reports progressive worsening of pain, now radiating to shoulder. Associated symptoms include difficulty raising arm above head, decreased grip strength. No numbness or tingling reported.
+
+MEDICATIONS: Olanzapine 5mg daily (recently discontinued due to rigidity), Carbidopa-levodopa 25-100 TID.
+
+PHYSICAL EXAM: Left shoulder with limited abduction (60 degrees vs 180 normal), tenderness over rotator cuff insertion. No visible deformity. Neck shows mild rigidity, improved since olanzapine discontinuation.
+
+ASSESSMENT: Rotator cuff injury vs frozen shoulder, likely exacerbated by fall. Medication-induced rigidity improving.","Patient: I fell about 3 months ago and hurt my left arm. It's been getting worse.
+Doctor: Can you describe the pain? Where exactly does it hurt?
+Patient: It's mainly in my shoulder area, but sometimes goes down my arm. I can't lift my arm up like I used to.
+Doctor: On a scale of 1-10, how would you rate the pain?
+Patient: About a 6 or 7, worse when I try to reach for things.
+Doctor: Have you had any numbness or tingling?
+Patient: No, just the pain and stiffness.
+Doctor: I see you were on olanzapine. How has your neck stiffness been since stopping it?
+Patient: Much better actually. The neck feels less rigid now.","{""chief_complaint"": ""left arm pain after fall"", ""duration"": ""3 months"", ""severity"": ""6-7/10"", ""location"": ""left shoulder radiating to arm"", ""aggravating_factors"": [""reaching"", ""lifting""], ""associated_symptoms"": [""reduced ROM"", ""weakness""], ""negatives"": [""no numbness"", ""no tingling""], ""past_medical_history"": [""Parkinson's disease""], ""medications"": {""current"": [""Carbidopa-levodopa 25-100 TID""], ""discontinued"": [""Olanzapine 5mg - due to rigidity""]}, ""physical_exam"": {""left_shoulder"": {""abduction"": ""60 degrees (limited)"", ""tenderness"": ""rotator cuff insertion""}, ""neck"": ""mild rigidity, improved""}, ""assessment"": [""Rotator cuff injury vs frozen shoulder"", ""Drug-induced rigidity (improving)""], ""plan"": [""Consider imaging"", ""Physical therapy referral"", ""Follow-up in 2 weeks""]}"

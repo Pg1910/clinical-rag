@@ -1,0 +1,62 @@
+================================================================================
+CLINICAL CASE REPORT - Row ID: 12
+Generated: 2026-01-24T16:36:49.371849
+================================================================================
+
+────────────────────────────────────────────────────────────────────────────────
+SOAP SUMMARY
+────────────────────────────────────────────────────────────────────────────────
+## SUBJECTIVE
+- The patient reports left arm pain following a fall 3 months ago, with worsening symptoms and reduced range of motion (ROM) [CS_12_10, CS_12_6, CS_12_7, CS_12_1].  She reports associated weakness [CS_12_7] and pain rated 6-7/10 [CS_12_2]. Olanzapine 5mg was discontinued due to rigidity [CS_12_12].
+
+## OBJECTIVE
+- Physical exam reveals limited shoulder abduction (60 degrees vs 180 normal) and tenderness over the rotator cuff insertion [CF_12_1]. Neck shows mild rigidity, improved since olanzapine discontinuation [CS_12_15]. No numbness or tingling was reported [CS_12_8]. The patient’s pain is rated 6-7/10 [CS_12_2].
+
+## ASSESSMENT
+- Likely rotator cuff injury or frozen shoulder, exacerbated by the fall [CF_12_0, CS_12_20]. Medication-induced rigidity is improving [CS_12_12].
+
+## PLAN
+- Physical therapy referral [CS_12_19]. Follow-up in 2 weeks [CS_12_20].
+
+────────────────────────────────────────────────────────────────────────────────
+DIFFERENTIAL DIAGNOSIS
+────────────────────────────────────────────────────────────────────────────────
+
+1. Rotator Cuff Injury (high confidence)
+   Supporting evidence:
+   - associated_symptoms[1]: weakness [CS_12_7]
+   - reduced ROM: 60 degrees abduction [CS_12_6]
+   - physical_exam.neck: mild rigidity, improved [CS_12_15]
+   Missing: MRI rotator cuff evaluation, Rotator cuff strength testing
+
+2. Frozen Shoulder (Adhesive Capsulitis) (moderate confidence)
+   Supporting evidence:
+   - reduced ROM: 60 degrees abduction [CS_12_6]
+   - severity: 6-7/10 [CS_12_2]
+   - duration: 3 months [CS_12_1]
+   Missing: Range of motion measurements (full spectrum), USS of shoulder to assess capsule thickness
+
+3. Parkinson’s Disease Exacerbation (moderate confidence)
+   Supporting evidence:
+   - past_medical_history[0]: Parkinson's disease [CS_12_10]
+   - medications.discontinued[0]: Olanzapine 5mg - due to rigidity [CS_12_12]
+   Missing: Assessment of motor stability (e.g., UPDRS), Detailed medication review
+
+────────────────────────────────────────────────────────────────────────────────
+CLARIFYING QUESTIONS
+────────────────────────────────────────────────────────────────────────────────
+1. “Can you describe the onset of the reduced range of motion and weakness? Specifically, when did it begin, and were there any specific events or activities that triggered or worsened the symptoms initially?” (This addresses the “onset” missing information and could reveal a potential exacerbating factor.)
+2. “Can you describe the rigidity the patient was experiencing prior to discontinuing Olanzapine?  Was it constant, intermittent, and what were the characteristics of the rigidity (e.g., akathisia, tremor)?” (This clarifies the reason for Olanzapine discontinuation and provides more detail about the patient’s symptoms, potentially informing medication choices.)
+3. “Can you perform a detailed physical examination, specifically assessing the patient’s motor skills, including assessing for bradykinesia, tremor, rigidity, and postural instability?  Please quantify the reduced ROM further (e.g., specific degrees of limitation in key movements).” (This directly addresses the missing physical exam findings and seeks more precise data on motor function.)
+4. “What is the patient’s current medication adherence for the Carbidopa-levodopa? Are there any side effects they are experiencing with the current medication regimen?” (This assesses medication effectiveness and identifies potential barriers to treatment or new side effects to monitor.)
+5. “Can you please describe the patient’s general appearance and any other associated symptoms, such as autonomic dysfunction (e.g., constipation, orthostatic hypotension), cognitive changes, or mood changes?” (This expands on the associated symptoms and could reveal additional contributing factors or complications.)
+
+────────────────────────────────────────────────────────────────────────────────
+EVIDENCE USED: 25 items
+────────────────────────────────────────────────────────────────────────────────
+CF_12_0, CF_12_1, CN_12_0, CS_12_1, CS_12_10, CS_12_11, CS_12_12, CS_12_15, CS_12_17, CS_12_18, CS_12_19, CS_12_2, CS_12_20, CS_12_6, CS_12_7, CS_12_8, CV_12_1, CV_12_13, CV_12_7, D000004
+... and 5 more
+
+================================================================================
+END OF REPORT
+================================================================================

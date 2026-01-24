@@ -1,0 +1,74 @@
+[
+  {
+    "id": "infection_source",
+    "question": "What is the suspected source of infection (e.g., biliary, bloodstream, lung), and what evidence supports it?",
+    "rationale": "Helps narrow sepsis source and competing causes of deterioration.",
+    "answer": "The suspected source of infection is the biliary tract, with evidence of sepsis [D000030, N000004]. The patient\u2019s presentation includes a congenital bile duct anomaly, infection of the biliary tract and liver, multiple liver abscesses, and portal hypertension [D000030, N000004]."
+  },
+  {
+    "id": "cultures",
+    "question": "What are the blood culture results (organism, sensitivities) and timing relative to antibiotics?",
+    "rationale": "Confirms pathogen, guides whether ongoing sepsis is plausible.",
+    "answer": "Not documented in available records."
+  },
+  {
+    "id": "resp_metrics",
+    "question": "What are the key respiratory severity metrics/trends (FiO2, PEEP, PIP, PaO2/SpO2 trend) over time?",
+    "rationale": "Required to stage ARDS severity and distinguish ventilation issues vs disease progression.",
+    "answer": "The available evidence indicates the following respiratory severity metrics and trends:\n\n*   **FiO2:** Increased from 50% to 100% during hand bag ventilation sessions [D000034].\n*   **PEEP:** Not explicitly quantified in the provided evidence.\n*   **PIP:** Not explicitly quantified in the provided evidence.\n*   **PaO2/SpO2 Trend:** Not explicitly quantified in the provided evidence. However, an increase in FiO2 is associated with increased oxygenation [D000013]."
+  },
+  {
+    "id": "coag_profile",
+    "question": "What is the full coagulation profile trend (PT/INR, PTT, fibrinogen, platelets) and bleeding status?",
+    "rationale": "Distinguishes liver-related coagulopathy from DIC and assesses severity.",
+    "answer": "The coagulation profile includes elevated PTT, PT, and fibrinogen levels [D000044, D000042, D000041]. Platelet count is also noted [D000042]. The bleeding status is not explicitly detailed in available records [Not documented in available records]."
+  },
+  {
+    "id": "hepatic_labs",
+    "question": "What are liver function trends (bilirubin, AST/ALT, ammonia) and clinical signs (encephalopathy) if documented?",
+    "rationale": "Corroborates liver failure trajectory and severity.",
+    "answer": "Liver function trends: Elevated ammonia levels are present [D000058], aspartate aminotransferase (AST) is high [D000048], and blood urea nitrogen (BUN) is increased [D000050]. Clinical signs: Encephalopathy is suggested by elevated ammonia levels [D000058]."
+  },
+  {
+    "id": "renal_status",
+    "question": "What is renal function trend (BUN/Cr, urine output) and fluid balance?",
+    "rationale": "Differentiates pre-renal vs intrinsic kidney injury and impacts overall severity assessment.",
+    "answer": "Renal function: BUN levels are elevated at [D000050], and serum creatinine levels are elevated at [D000052], indicating renal insufficiency.\n\nFluid balance: Fluid balance data is present in the flowsheets [D000036], but the specific trend is not detailed in the provided evidence.\n\nUrine output: Not documented in available records."
+  },
+  {
+    "id": "patient_overview",
+    "question": "What is the patient's age, weight, and primary admission diagnosis?",
+    "rationale": "Establishes baseline patient context for clinical decision-making.",
+    "answer": "The patient\u2019s admission body weight is 5 kg. The primary admission diagnosis is ARDS complicated by sepsis, a congenital bile duct anomaly, high-risk corrective surgical procedure, and infection of the biliary tract and liver [N000008, N000030]."
+  },
+  {
+    "id": "current_status",
+    "question": "What is the patient's current clinical status and trajectory (improving, stable, deteriorating)?",
+    "rationale": "Guides urgency of interventions and prognosis discussion.",
+    "answer": "The patient presents as a typical ARDS case complicated by sepsis, coagulation defects, and a history of a high-risk corrective surgical procedure and biliary tract infection [D000030]. The patient is receiving mechanical ventilation [D000010] and other supportive measures [N000005]. Given the etiology of ARDS and the presence of sepsis, the clinical trajectory is currently deteriorating [D000030]."
+  },
+  {
+    "id": "organ_failures",
+    "question": "Which organ systems are currently failing or at risk, and what is the evidence?",
+    "rationale": "Multi-organ dysfunction assessment is critical in ICU patients.",
+    "answer": "The following organ systems are failing or at risk:\n\n*   **Respiratory System:** The patient presents with ARDS, characterized by respiratory distress, tachypnea, and impaired oxygenation [D000005, D000009].\n*   **Cardiovascular System:** Sepsis and coagulation defects are present, potentially impacting oxygen delivery [D000030, D000024]."
+  },
+  {
+    "id": "ventilator_settings",
+    "question": "What are the current ventilator settings (mode, FiO2, PEEP, tidal volume) and respiratory status?",
+    "rationale": "Essential for ARDS management and weaning readiness assessment.",
+    "answer": "The available data does not specify the current ventilator settings (mode, FiO2, PEEP, tidal volume) [N000001]. However, it is documented that the patient uses two modes of ventilation, including CMV, and utilizes a hand bag ventilation with FiO2 increased from 50% to 100% [D000034]. The patient is also sedated and has muscle relaxation [D000027]."
+  },
+  {
+    "id": "hemodynamics",
+    "question": "What are the patient's hemodynamic parameters (MAP, heart rate, vasopressor requirements)?",
+    "rationale": "Guides fluid resuscitation and vasopressor management in sepsis/shock.",
+    "answer": "The patient\u2019s heart rate was 7 bpm [C000003] and 22 bpm [C000007]. The evidence does not specify the patient\u2019s mean arterial pressure (MAP) or vasopressor requirements [N000009]."
+  },
+  {
+    "id": "antibiotic_coverage",
+    "question": "What antibiotics is the patient receiving and are they appropriate for the identified organisms?",
+    "rationale": "Antibiotic stewardship and source control are pillars of sepsis management.",
+    "answer": "The patient is receiving antibiotics, but the specific agents and their appropriateness for the identified organisms are not documented in available records. [N000009]"
+  }
+]

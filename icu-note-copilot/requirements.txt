@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+httpx
+jinja2
+pydantic
+numpy
+nltk
+sentence-transformers
+faiss-cpu
+rank-bm25

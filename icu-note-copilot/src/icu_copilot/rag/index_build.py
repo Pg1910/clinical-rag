@@ -39,12 +39,19 @@ def build_evidence_corpus(processed_dir: Path) -> tuple[list[EvidenceDoc], dict[
       docs: list of documents for retrieval (text)
       store: evidence_id -> full record (for /evidence lookup and audit)
     """
+    # Legacy ICU files
     files = [
         processed_dir / "narrative_spans.jsonl",
         processed_dir / "labs.jsonl",
         processed_dir / "monitor.jsonl",
         processed_dir / "codebook.jsonl",
         processed_dir / "domain.jsonl",
+        processed_dir / "flowsheet.jsonl",
+        # CSV-derived evidence files
+        processed_dir / "csv_summaries.jsonl",
+        processed_dir / "csv_notes.jsonl",
+        processed_dir / "csv_full_notes.jsonl",
+        processed_dir / "csv_conversations.jsonl",
     ]
     docs: list[EvidenceDoc] = []
     store: dict[str, dict] = {}
@@ -53,10 +60,18 @@ def build_evidence_corpus(processed_dir: Path) -> tuple[list[EvidenceDoc], dict[
             continue
         rows = load_jsonl(fp)
         for r in rows:
-            eid = r["evidence_id"]
+            eid = r.get("evidence_id", r.get("id", ""))
+            if not eid:
+                continue
             store[eid] = r
-            txt = r.get("raw_text", "")
-            docs.append(EvidenceDoc(evidence_id=eid, text=txt, meta={"source_file": r.get("source_file")}))
+            txt = r.get("raw_text", r.get("text", ""))
+            meta = {
+                "source_file": r.get("source_file", fp.name),
+                "evidence_type": r.get("evidence_type", ""),
+                "row_id": r.get("row_id"),
+                "field": r.get("field"),
+            }
+            docs.append(EvidenceDoc(evidence_id=eid, text=txt, meta=meta))
     return docs, store
 
 
