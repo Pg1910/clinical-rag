@@ -272,7 +272,3 @@ Each output is:
 This system is a **clinical decision-support prototype**.
 It does **not** provide medical advice and must not replace professional clinical judgment.
 
----
-
-Tell me what you want next.
-```
