@@ -1,47 +1,109 @@
-import json, os
-from typing import Dict, Any
+import json
+import os
+from typing import Dict, Any, List
 
+# Paths
+DATA_DIR = os.path.join(os.path.dirname(__file__), "../data")
+NOTES_PATH = os.path.join(DATA_DIR, "clinical_notes_100.jsonl")
 
-DATA_DIR = "data/processed/runs/latest/"
-EVIDENCE_STORE = os.path.join(DATA_DIR, "evidence_store.json")
-evidence_store = {}
-if os.path.exists(EVIDENCE_STORE):
-    with open(EVIDENCE_STORE, "r") as f:
-        try:
-            evidence_store = {e["evidence_id"]: e for e in json.load(f)}
-        except Exception:
-            evidence_store = {}
+# In-memory store
+cases_store = {}
 
-def get_cases():
-    # Example: list of row_ids from evidence store
-    cases = [
-        {"case_id": "latest", "label": "Latest run"}
-    ]
-    for e in evidence_store.values():
-        if "row_id" in e:
-            cases.append({"case_id": e["row_id"], "label": f"Row {e['row_id']}"})
-    return {"cases": cases}
+def load_data():
+    """Loads clinical notes into memory on startup."""
+    global cases_store
+    if not os.path.exists(NOTES_PATH):
+        print(f"Warning: {NOTES_PATH} not found.")
+        return
+
+    print(f"Loading data from {NOTES_PATH}...")
+    try:
+        with open(NOTES_PATH, "r", encoding="utf-8") as f:
+            for line in f:
+                try:
+                    obj = json.loads(line)
+                    idx = str(obj.get("idx", ""))
+                    if idx:
+                        cases_store[idx] = obj
+                except json.JSONDecodeError:
+                    continue
+        print(f"Loaded {len(cases_store)} cases.")
+    except Exception as e:
+        print(f"Error loading data: {e}")
+
+# Load immediately on import (simple for this scale)
+load_data()
+
+def get_cases() -> Dict[str, List[Dict[str, str]]]:
+    """Returns list of available cases."""
+    case_list = []
+    # Sort by ID for consistent order
+    for idx in sorted(cases_store.keys(), key=lambda x: int(x) if x.isdigit() else x):
+        # Create a label, e.g., "Case 155216: A sixteen year-old..."
+        # Truncate note for label
+        note_snippet = cases_store[idx].get("note", "")[:50] + "..."
+        label = f"Case {idx}: {note_snippet}"
+        case_list.append({"case_id": idx, "label": label})
+    
+    return {"cases": case_list}
+
+def get_case_data(case_id: str) -> Dict[str, Any]:
+    return cases_store.get(case_id, {})
 
 def get_evidence(evidence_id: str) -> Dict[str, Any]:
-    return evidence_store.get(evidence_id, {})
+    # In a real system, evidence might be distinct chunks. 
+    # For now, we simulate evidence as the full note or specific parts if available.
+    # If evidence_id matches a case_id, return the full note as "evidence"
+    if evidence_id in cases_store:
+        val = cases_store[evidence_id]
+        return {
+            "evidence_id": evidence_id,
+            "text": val.get("full_note") or val.get("note"),
+            "source": f"clinical_notes_100.jsonl (Case {evidence_id})"
+        }
+    return {"evidence_id": evidence_id, "text": "Evidence not found."}
 
 def global_retrieve(payload: dict) -> dict:
-    # Dummy implementation: return SOAP queries and top evidence
-    case_id = payload.get("case_id", "latest")
-    question = payload.get("question", "Summarize case")
+    case_id = str(payload.get("case_id"))
+    question = payload.get("question")
+    
+    case_data = cases_store.get(case_id)
+    if not case_data:
+        return {"error": "Case not found"}
+
+    # Simulate retrieval results using the actual case text
+    # In a real RAG, this would query a vector DB.
+    # Here, we just return the "Note" as the top evidence for "S" (Subjective)
+    
+    note_text = case_data.get("note", "")
+    
+    # Simple chunking for "evidence"
+    chunks = [note_text[i:i+500] for i in range(0, len(note_text), 500)]
+    
+    results = {
+        "S": [{"id": case_id, "text": chunks[0] if chunks else ""}],
+        "O": [{"id": case_id, "text": chunks[1] if len(chunks)>1 else ""}],
+        "A": [],
+        "P": []
+    }
+    
     soap_queries = {
-        "S": ["What is the chief complaint?", "History of present illness?"],
-        "O": ["Key labs?", "Monitor findings?"],
-        "A": ["Diagnosis?"],
+        "S": ["What is the patient history?"],
+        "O": ["What are the objective findings?"],
+        "A": ["Assessment?"],
         "P": ["Plan?"]
     }
-    results = {s: [e for e in list(evidence_store.values())[:5]] for s in "SOAP"}
-    return {"soap_queries": soap_queries, "results": results}
+
+    return {"soap_queries": soap_queries, "results": results, "evidence_count": len(chunks)}
 
 def local_retrieve(payload: dict) -> dict:
-    # Dummy implementation: derive sub-queries and return evidence
-    case_id = payload.get("case_id", "latest")
-    question = payload.get("question", "Is there evidence of sepsis?")
-    derived_queries = [{"section": "A", "query": question}]
-    results = {s: [e for e in list(evidence_store.values())[5:20]] for s in "SOAP"}
-    return {"derived_queries": derived_queries, "results": results}
+    case_id = str(payload.get("case_id"))
+    question = payload.get("question")
+    
+    # Just return the case note as evidence for now
+    return {
+        "derived_queries": [{"section": "Custom", "query": question}],
+        "results": {
+            "Local": [{"id": case_id, "text": f"Simulated local result for {question}"}]
+        }
+    }

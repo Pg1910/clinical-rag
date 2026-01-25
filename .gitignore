@@ -1,0 +1,16 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.db
+db.sqlite3
+.env
+.vscode/
+.idea/
+data/processed/
+data/raw/
+data/indices/
+*.log
+.gemini/
